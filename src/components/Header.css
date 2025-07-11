@@ -1,0 +1,155 @@
+
+.header-wrapper {
+  position: relative;
+  padding-top: 80px; 
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1f2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+
+.logo-link img {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 100%;
+  gap: 10px; 
+   height: 40px;       
+  width: auto;         
+  object-fit: contain; 
+  margin-right: 10px; 
+  display: flex;
+  margin-bottom: 3px;
+  
+}
+.logo-link {
+  text-decoration: none;
+  color: white;
+  margin-top: 2px;
+  
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: auto;
+
+}
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.nav-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ec4899;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ec4899; 
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e5e7eb;
+}
+
+/* زر القائمة في الموبايل */
+.mobile-menu-btn {
+  font-size: 25px;
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+/* القائمة الجانبية للموبايل */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  background-color: #1f2937;
+  padding-top: 80px;
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.mobile-sidebar.open {
+  right: 0;
+}
+
+.mobile-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-sidebar ul li {
+  padding: 1rem;
+}
+
+.mobile-sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+/* استجابة الشاشات */
+@media screen and (max-width: 768px) {
+  .nav-links.desktop {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+}

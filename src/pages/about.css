@@ -1,0 +1,152 @@
+.picteem {
+  display: block;             /* ليعامل كعنصر كتلي */
+  margin: 2rem auto;          /* مسافة رأسية وأفقية تلقائية (يتمركز أفقياً) */
+  max-width: 300px;           /* أقصى عرض معقول */
+  width: 100%;                /* عرض نسبي ليتناسب مع الحاوية */
+  height: auto;               /* يحافظ على نسبة الأبعاد */
+  border-radius: 12px;        /* زوايا دائرية ناعمة */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);  /* ظل لطيف تحت الصورة */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;            /* مؤشر اليد عند المرور */
+}
+
+.picteem:hover {
+  transform: scale(1.05);     /* تكبير بسيط عند التمرير */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25); /* ظل أكبر وأكثر وضوحًا */
+}
+
+
+.about-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #4f46e5;
+}
+
+.intro {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  color: #4b5563;
+}
+
+.mission-vision {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.mission-vision > div {
+  flex: 1 1 300px;
+  background: #eef2ff;
+  padding: 1.8rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(79, 70, 229, 0.15);
+  text-align: center;
+}
+
+.mission-vision h2 {
+  color: #4338ca;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.values {
+  background: #f9fafb;
+  border-left: 6px solid #6366f1;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.1);
+  margin-bottom: 3rem;
+}
+
+.values h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+  text-align: center;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #374151;
+}
+
+.values ul li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.values ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #6366f1;
+  font-weight: bold;
+}
+
+.contact-cta {
+  text-align: center;
+}
+
+.contact-cta h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4f46e5;
+  font-weight: 700;
+}
+
+.cta-button {
+  background-color: #6366f1;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4f46e5;
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+  .mission-vision {
+    flex-direction: column;
+    
+  }
+}
+@media (max-width: 768px) {
+  .mission-vision > div {
+    padding: 0.8rem 1rem;
+  }
+
+  .mission-vision h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .mission-vision p {
+    font-size: 1rem;
+  }
+}
