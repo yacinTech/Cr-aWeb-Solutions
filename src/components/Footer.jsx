@@ -1,5 +1,6 @@
 import './footer.css';
 import logo from '../assets/images.jpeg';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -16,10 +17,10 @@ function Footer() {
         <div className="footer-links">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="/">Accueil</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/about">À propos</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Accueil</Link></li>
+            <li><Link to="/services">Services</Link></li>
+            <li><Link to="/about">À propos</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 

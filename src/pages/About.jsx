@@ -40,7 +40,7 @@ function About(){
 
                     <div className="contact-cta">
                     <h3>Un projet en tête ?</h3>
-                    <a href="/contact" className="cta-button">Contactez-nous</a>
+                    <Link to="/contact" className="cta-button">Contactez-nous</Link>
                     </div>
                 </div>
             </section>
