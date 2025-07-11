@@ -21,8 +21,8 @@ function Header() {
 
           {/* قائمة الروابط في سطح المكتب */}
           <ul className="nav-links desktop">
-            <li><Link className="nav-link" href="/">Home</Link></li>
-            <li><Link className="nav-link" href="/about">About Us</Link></li>
+            <li><Link className="nav-link" to="/">Home</Link></li>
+            <li><Link className="nav-link" to="/about">About Us</Link></li>
             <li><a className="nav-link" href="/services">Our Services</a></li>
             <li><a className="nav-link" href="blog">Blog</a></li>
             <li><a className="nav-link" href="/contact">Contact Us</a></li>
