@@ -1,6 +1,7 @@
 
 import './about.css'
 import phototeem from '../assets/equipe.jpeg';
+import { Link } from 'react-router-dom';
 
 
 function About(){
