@@ -23,9 +23,9 @@ function Header() {
           <ul className="nav-links desktop">
             <li><Link className="nav-link" to="/">Home</Link></li>
             <li><Link className="nav-link" to="/about">About Us</Link></li>
-            <li><a className="nav-link" to="/services">Our Services</a></li>
-            <li><a className="nav-link" to="blog">Blog</a></li>
-            <li><a className="nav-link" to="/contact">Contact Us</a></li>
+            <li><Link className="nav-link" to="/services">Our Services</Link></li>
+            <li><Link className="nav-link" to="/blog">Blog</Link></li>
+            <li><Link className="nav-link" to="/contact">Contact Us</Link></li>
           </ul>
 
           {/* زر القائمة في الموبايل */}
