@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Header.css';
 import logo from '../assets/images.jpeg';
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -20,8 +21,8 @@ function Header() {
 
           {/* قائمة الروابط في سطح المكتب */}
           <ul className="nav-links desktop">
-            <li><a className="nav-link" href="/">Home</a></li>
-            <li><a className="nav-link" href="/about">About Us</a></li>
+            <li><Link className="nav-link" href="/">Home</Link></li>
+            <li><Link className="nav-link" href="/about">About Us</Link></li>
             <li><a className="nav-link" href="/services">Our Services</a></li>
             <li><a className="nav-link" href="blog">Blog</a></li>
             <li><a className="nav-link" href="/contact">Contact Us</a></li>
