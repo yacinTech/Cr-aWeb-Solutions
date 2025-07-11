@@ -1,7 +1,7 @@
 
 import './about.css'
 import phototeem from '../assets/equipe.jpeg';
-import Contact from './Contact';
+
 
 function About(){
     return(

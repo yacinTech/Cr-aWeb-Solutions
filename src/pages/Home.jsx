@@ -1,10 +1,8 @@
-import React from "react";
+
 import Accpic from '../assets/hero-image.svg'; 
 import './home.css'
-import { FaLaptopCode, FaSearch, FaFacebookF, FaBullhorn } from "react-icons/fa";
 import Testimonials from "../components/Testimonials";
 import ContactCTA from "../components/ContactForm";
-import { useParams } from 'react-router-dom';
 import articles from '../data/articles';
 import { Link } from 'react-router-dom';
 
