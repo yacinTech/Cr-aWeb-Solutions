@@ -23,9 +23,9 @@ function Header() {
           <ul className="nav-links desktop">
             <li><Link className="nav-link" to="/">Home</Link></li>
             <li><Link className="nav-link" to="/about">About Us</Link></li>
-            <li><a className="nav-link" href="/services">Our Services</a></li>
-            <li><a className="nav-link" href="blog">Blog</a></li>
-            <li><a className="nav-link" href="/contact">Contact Us</a></li>
+            <li><a className="nav-link" to="/services">Our Services</a></li>
+            <li><a className="nav-link" to="blog">Blog</a></li>
+            <li><a className="nav-link" to="/contact">Contact Us</a></li>
           </ul>
 
           {/* زر القائمة في الموبايل */}
@@ -38,11 +38,11 @@ function Header() {
       {/* قائمة جانبية تظهر في الشاشات الصغيرة */}
       <div className={`mobile-sidebar ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="/" onClick={toggleMenu}>Home</a></li>
-          <li><a href="/about" onClick={toggleMenu}>About Us</a></li>
-          <li><a href="/services" onClick={toggleMenu}>Our Services</a></li>
-          <li><a href="/blog" onClick={toggleMenu}>Blog</a></li>
-          <li><a href="/contact" onClick={toggleMenu}>Contact Us</a></li>
+          <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={toggleMenu}>About Us</Link></li>
+          <li><Link to="/services" onClick={toggleMenu}>Our Services</Link></li>
+          <li><Link to="/blog" onClick={toggleMenu}>Blog</Link></li>
+          <li><Link to="/contact" onClick={toggleMenu}>Contact Us</Link></li>
         </ul>
       </div>
     </div>
